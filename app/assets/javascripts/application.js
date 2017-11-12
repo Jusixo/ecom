@@ -14,4 +14,5 @@
 //= require turbolinks
 
 //= require 'cable'
-@import 'jquery';@import 'jquery_ujs';
+@import 'jquery';
+@import 'jquery_ujs';

@@ -1,0 +1,17 @@
+<%= form_with(model: eshop, local: true) do |form| %>
+  <% if eshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(eshop.errors.count, "error") %> prohibited this eshop from being saved:</h2>
+
+      <ul>
+      <% eshop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
