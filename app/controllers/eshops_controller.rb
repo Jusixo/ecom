@@ -5,7 +5,9 @@ class EshopsController < ApplicationController
   def index
     @eshops = Eshop.all
   end
-  
+
+  def cart
+  end
 
   # GET /eshops/1
   def show
